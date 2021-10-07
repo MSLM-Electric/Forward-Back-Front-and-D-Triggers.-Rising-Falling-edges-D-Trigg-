@@ -18,9 +18,9 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 
-/*		_________________
+/*	    _________________
 	___|					a (uint) - 16 x IN signals or commandVars 		
-		__
+	    __
 	___|  |______________	FwdFrntT.Qff  16 x Outs - Calculating process is logical parallel
 */
 unsigned int ForwardFrontTrigger16bit(unsigned int a, unsigned int tBITx, ForwardFrontsInternalRegs16bit_t *FFRegs)
@@ -67,12 +67,12 @@ int main(void)
 	}
 }//*/
 
-//Ïðèìåð ïàðàëëåëüíîãî ñ÷èòûâàíèÿ è îïðåäåëåíèÿ ïðèñóòñòâèÿ ïåðåäíåãî ôðîíòà 3 ñëó÷àéíûõ âõîäíûõ ñèãíàëîâ:
+//ÃÃ°Ã¨Ã¬Ã¥Ã° Ã¯Ã Ã°Ã Ã«Ã«Ã¥Ã«Ã¼Ã­Ã®Ã£Ã® Ã±Ã·Ã¨Ã²Ã»Ã¢Ã Ã­Ã¨Ã¿ Ã¨ Ã®Ã¯Ã°Ã¥Ã¤Ã¥Ã«Ã¥Ã­Ã¨Ã¿ Ã¯Ã°Ã¨Ã±Ã³Ã²Ã±Ã²Ã¢Ã¨Ã¿ Ã¯Ã¥Ã°Ã¥Ã¤Ã­Ã¥Ã£Ã® Ã´Ã°Ã®Ã­Ã²Ã  3 Ã±Ã«Ã³Ã·Ã Ã©Ã­Ã»Ãµ Ã¢ÃµÃ®Ã¤Ã­Ã»Ãµ Ã±Ã¨Ã£Ã­Ã Ã«Ã®Ã¢:
 //DI_RUNMotor - tBIT0
 //DI_RUNPummp - tBIT5
 //ReadTSensorOnce - tBIT4
 //DI_STOPMotor - tBIT1
-//Çàðèñîâàòü îäèí ðàç Ìåíþ íàñòðîåê â LCD - tBIT15
+//Ã‡Ã Ã°Ã¨Ã±Ã®Ã¢Ã Ã²Ã¼ Ã®Ã¤Ã¨Ã­ Ã°Ã Ã§ ÃŒÃ¥Ã­Ã¾ Ã­Ã Ã±Ã²Ã°Ã®Ã¥Ãª Ã¢ LCD - tBIT15
 /*
 ForwardFrontsInternalRegs16bit_t ForwardFTriggerReg;
 int main(void)
@@ -101,10 +101,10 @@ int main(void)
 }
 */
 
-/*		__		  _____			  _			 ______
-	___|  |______|	   |_________| |________|	   |___		a (uint) - 16 x IN signals or commandVars
-		_________				  __________
-	___|		 |_______________|			|__________		DTrig.Qff  16 x Outs - Calculating process is logical parallel
+/*	    __	      _____	      _		 ______
+	___|  |______|	   |_________| |________|      |___		a (uint) - 16 x IN signals or commandVars
+	    _________		      __________
+	___|	     |_______________|		|__________		DTrig.Qff  16 x Outs - Calculating process is logical parallel
 */
 unsigned int D_Trigger16bit(unsigned int a, unsigned int tBITx, D_TriggersInternalRegs16bit_t *DTrigRegs)
 {
@@ -117,8 +117,8 @@ unsigned int D_Trigger16bit(unsigned int a, unsigned int tBITx, D_TriggersIntern
 }
 
 /*	_______
-		   |_____________	a (uint) - 16 x IN signals or commandVars
-		    __
+	       |_____________	a (uint) - 16 x IN signals or commandVars
+	        __
 	_______|  |__________	BackFrntT.Qbf
 
 	   --->|--|<--- Tbf = Tff - 1 cycle fully executed program
