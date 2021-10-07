@@ -19,7 +19,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 
 /*	    _________________
-	___|					a (uint) - 16 x IN signals or commandVars 		
+	___|			a (uint) - 16 x IN signals or commandVars 		
 	    __
 	___|  |______________	FwdFrntT.Qff  16 x Outs - Calculating process is logical parallel
 */
@@ -102,9 +102,9 @@ int main(void)
 */
 
 /*	    __	      _____	      _		 ______
-	___|  |______|	   |_________| |________|      |___		a (uint) - 16 x IN signals or commandVars
+	___|  |______|	   |_________| |________|      |___	a (uint) - 16 x IN signals or commandVars
 	    _________		      __________
-	___|	     |_______________|		|__________		DTrig.Qff  16 x Outs - Calculating process is logical parallel
+	___|	     |_______________|		|__________	DTrig.Qff  16 x Outs - Calculating process is logical parallel
 */
 unsigned int D_Trigger16bit(unsigned int a, unsigned int tBITx, D_TriggersInternalRegs16bit_t *DTrigRegs)
 {
