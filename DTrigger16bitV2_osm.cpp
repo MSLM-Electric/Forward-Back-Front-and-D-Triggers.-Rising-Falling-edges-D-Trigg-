@@ -18,10 +18,10 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 
-/*	    _________________
-	___|			a (uint) - 16 x IN signals or commandVars 		
-	    __
-	___|  |______________	FwdFrntT.Qff  16 x Outs - Calculating process is logical parallel
+/*	    ______________________________________________________________________________________	    __
+	___|			a (uint) - 16 x IN signals or commandVars 			  |________|  |________
+            __												    __
+	___|  |______________	FwdFrntT.Qff  16 x Outs - Calculating process is logical parallel _________|  |________
 */
 unsigned int ForwardFrontTrigger16bit(unsigned int a, unsigned int tBITx, ForwardFrontsInternalRegs16bit_t *FFRegs)
 {
