@@ -32,7 +32,7 @@ unsigned int ForwardFrontTrigger16bit(unsigned int a, unsigned int tBITx, Forwar
 	a = a & tBITx;
 	(*FFRegs).inputSignal = ((*FFRegs).inputSignal & ~tBITx) | a;
 	(*FFRegs).Qff = (*FFRegs).inputSignal & (~(*FFRegs).FfrontRegister);
-		(*FFRegs).FfrontRegister = (*FFRegs).inputSignal;
+	(*FFRegs).FfrontRegister = (*FFRegs).inputSignal;
 	return (*FFRegs).Qff;        //FFRegs->Qff;
 }
 
@@ -143,4 +143,13 @@ unsigned char delayedPress16bit(unsigned int *countReg, unsigned char inputBit, 
 		return 1;
 	}
 	return 0;
+}
+
+void Reset_ForwardFrontTrigger16bit(unsigned int a, unsigned int tBITx, ForwardFrontsInternalRegs16bit_t *FFRegs)
+{
+	a = a & tBITx;
+	(*FFRegs).inputSignal = ((*FFRegs).inputSignal & ~tBITx) | a;
+	(*FFRegs).Qff = (*FFRegs).inputSignal & (~(*FFRegs).FfrontRegister);
+	(*FFRegs).FfrontRegister = (*FFRegs).inputSignal;
+	return (*FFRegs).Qff;        
 }
