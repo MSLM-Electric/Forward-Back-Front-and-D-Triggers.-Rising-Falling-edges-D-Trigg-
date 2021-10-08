@@ -56,7 +56,7 @@ struct ForwardFrontsInternalRegs16bit_t
 	unsigned int Qff;
 };
 
-struct BackFrontsInternalRegs16bit_t  //Эта структура похожа на верхнюю, так что можно обобщать-объединять (т.е это удалять и верхнее универсализовав применять)
+struct BackFrontsInternalRegs16bit_t  //ГќГІГ  Г±ГІГ°ГіГЄГІГіГ°Г  ГЇГ®ГµГ®Г¦Г  Г­Г  ГўГҐГ°ГµГ­ГѕГѕ, ГІГ ГЄ Г·ГІГ® Г¬Г®Г¦Г­Г® Г®ГЎГ®ГЎГ№Г ГІГј-Г®ГЎГєГҐГ¤ГЁГ­ГїГІГј (ГІ.ГҐ ГЅГІГ® ГіГ¤Г Г«ГїГІГј ГЁ ГўГҐГ°ГµГ­ГҐГҐ ГіГ­ГЁГўГҐГ°Г±Г Г«ГЁГ§Г®ГўГ Гў ГЇГ°ГЁГ¬ГҐГ­ГїГІГј)
 {
 	unsigned int inputSignal;
 	unsigned int BfrontRegister;
@@ -75,6 +75,7 @@ unsigned int ForwardFrontTrigger16bit(unsigned int a, unsigned int tBITx, Forwar
 unsigned int BackFrontTrigger16bit(unsigned int a, unsigned int tBITx, BackFrontsInternalRegs16bit_t *BFRegs);
 unsigned int D_Trigger16bit(unsigned int a, unsigned int tBITx, D_TriggersInternalRegs16bit_t *DTrigRegs);
 unsigned char delayedPress16bit(unsigned int *countReg, unsigned char inputBit, unsigned char k);
+void Reset_ForwardFrontTrigger16bit(unsigned int tBITx, ForwardFrontsInternalRegs16bit_t *FFRegs);
 
 
 #endif // !DTRIGGER16BITV2_OSM_h
