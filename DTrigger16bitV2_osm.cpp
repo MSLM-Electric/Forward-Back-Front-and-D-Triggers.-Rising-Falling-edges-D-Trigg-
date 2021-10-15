@@ -165,9 +165,9 @@ void Reset_ForwardFrontTrigger16bit(unsigned int tBITx, ForwardFrontsInternalReg
 /*Status: Not tested yet*/
 void Reset_D_Trigger16bit(unsigned int tBITx, D_TriggersInternalRegs16bit_t  *DTrigRegs)
 {
-	(*FFRegs).inputSignal &= ~tBITx;
-	(*FFRegs).DtrigRegK1 &= ~tBITx;
-	(*FFRegs).DtrigRegK2 &= ~tBITx;
-	(*FFRegs).Q_Dtrig &= ~tBITx;
+	(*DTrigRegs).inputSignal &= ~tBITx;
+	(*DTrigRegs).DtrigRegK1 &= ~tBITx;
+	(*DTrigRegs).DtrigRegK2 &= ~tBITx;
+	(*DTrigRegs).Q_Dtrig &= ~tBITx;
 	return;
 }
