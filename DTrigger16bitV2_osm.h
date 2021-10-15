@@ -76,7 +76,7 @@ unsigned int BackFrontTrigger16bit(unsigned int a, unsigned int tBITx, BackFront
 unsigned int D_Trigger16bit(unsigned int a, unsigned int tBITx, D_TriggersInternalRegs16bit_t *DTrigRegs);
 unsigned char delayedPress16bit(unsigned int *countReg, unsigned char inputBit, unsigned char k);
 void Reset_ForwardFrontTrigger16bit(unsigned int tBITx, ForwardFrontsInternalRegs16bit_t *FFRegs);
-void Reset_D_Trigger16bit(unsigned int tBITx, ForwardFrontsInternalRegs16bit_t *FFRegs);
+void Reset_D_Trigger16bit(unsigned int tBITx, D_TriggersInternalRegs16bit_t *DTrigRegs);
 
 
 #endif // !DTRIGGER16BITV2_OSM_h
