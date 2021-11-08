@@ -1,4 +1,4 @@
-Forward front trigger (rising edge), Back front trigger (falling edge) and D-Trigger (for single switch for example)
+Forward front trigger (rising edge), Back front trigger (falling edge) and D-Trigger (for "single button ON/OFF switch"-like example)
 
 This library helps you to implement a mentioned functions/triggers for your project. No requires CPU Timers resources, it can be useful for FREERTOS or any RTOS, also for 
 any platforms, because it doesn't depend on compiler.
