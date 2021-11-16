@@ -8,6 +8,7 @@
 
 
 /******************defines********************/
+#define tALLBITS 0xFFFF
 #define	tBIT15  0x8000
 #define	tBIT14  0x4000
 #define	tBIT13  0x2000
