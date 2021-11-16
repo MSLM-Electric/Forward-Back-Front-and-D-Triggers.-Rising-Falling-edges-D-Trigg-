@@ -151,7 +151,8 @@ Example: ForwardFrontsInternalRegs16bit_t FwdFrTrig_MOTORs_Control;
          int main(){...
 	    ...
             Reset_ForwardFrontTrigger16bit(tBIT15 | tBIT3, &FwdFrTrig_MOTORs_Control);
-	    Reset_ForwardFrontTrigger16bit(0xFFFF, &FwdFrTrig_FANs_Control);    //Reset all signals registers;
+	    Reset_ForwardFrontTrigger16bit(0xFFFF, &FwdFrTrig_FANs_Control);    //Reset all signals registers; or:
+	    Reset_ForwardFrontTrigger16bit(tALLBITS, &FwdFrTrig_FANs_Control);    //Reset all signals registers;	    
 Status: Not tested yet
 */
 void Reset_ForwardFrontTrigger16bit(unsigned int tBITx, ForwardFrontsInternalRegs16bit_t *FFRegs)
