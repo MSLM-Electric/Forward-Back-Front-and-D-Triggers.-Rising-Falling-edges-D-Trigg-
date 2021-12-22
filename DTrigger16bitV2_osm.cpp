@@ -39,7 +39,7 @@ unsigned int ForwardFrontTrigger16bit(unsigned int a, unsigned int tBITx, Forwar
 //EXAMPLE of using
 /*
 #include <xc.h>
-#include "DTrigger_osm.h"
+#include "DTrigger16bitV2_osm.h"
 
 #define ON 1
 #define OFF 0
